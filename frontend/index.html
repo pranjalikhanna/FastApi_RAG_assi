@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Ingestion and Query</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Document Ingestion & Query</h1>
+
+        <!-- Document Ingestion Form -->
+        <h2>Ingest Document</h2>
+        <form id="ingestForm">
+            <input type="file" id="documentFile" required />
+            <button type="submit">Ingest Document</button>
+        </form>
+
+        <!-- Query Form -->
+        <h2>Query Document</h2>
+        <input type="text" id="queryInput" placeholder="Enter your query" required />
+        <button onclick="queryDocument()">Query</button>
+
+        <div id="queryResults">
+            <h3>Results:</h3>
+            <ul id="resultsList"></ul>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
